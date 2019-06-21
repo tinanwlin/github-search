@@ -1,21 +1,22 @@
 import store from '../store';
+import { FETCH_USER, FETCHED_USER, RECEIVE_ERROR } from './types';
 
 export const fetchUser = () => {
   return {
-    type: 'FETCH_USER'
+    type: FETCH_USER
   };
 };
 
 export const fetchedUser = (post) => {
   return {
-    type: 'FETCHED_USER',
+    type: FETCHED_USER,
     data: post
   };
 };
 
 export const receiveError = () => {
   return {
-    type: 'RECEIVE_ERROR'
+    type: RECEIVE_ERROR
   };
 };
 
